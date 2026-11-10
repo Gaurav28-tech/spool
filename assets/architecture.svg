@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 260" width="880" height="260">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="880" height="260" rx="12" fill="#090d16" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Step 1: Input -->
+  <g transform="translate(40, 50)" filter="url(#shadow)">
+    <rect width="220" height="150" rx="10" fill="url(#cardGrad)" stroke="#30363d" stroke-width="1.2"/>
+    <rect width="220" height="34" rx="10" fill="#21262d"/>
+    <text x="16" y="22" fill="#f0f6fc" font-family="-apple-system,sans-serif" font-size="13" font-weight="600">Incoming Payload / Event</text>
+    <text x="16" y="66" fill="#8b949e" font-family="monospace" font-size="12">• Client Request</text>
+    <text x="16" y="90" fill="#8b949e" font-family="monospace" font-size="12">• Ingestion Headers</text>
+    <text x="16" y="114" fill="#8b949e" font-family="monospace" font-size="12">• Cryptographic Auth</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M 270 125 L 320 125" stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="4,4"/>
+  <polygon points="325,125 315,120 315,130" fill="#3b82f6"/>
+
+  <!-- Step 2: Core Engine -->
+  <g transform="translate(335, 35)" filter="url(#shadow)">
+    <rect width="250" height="180" rx="10" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1.8"/>
+    <rect width="250" height="36" rx="10" fill="#3b82f6" fill-opacity="0.15"/>
+    <text x="16" y="24" fill="#3b82f6" font-family="-apple-system,sans-serif" font-size="14" font-weight="700">SPOOL Core Engine</text>
+    <text x="16" y="70" fill="#f0f6fc" font-family="monospace" font-size="12">1. Fast Syntactic Validation</text>
+    <text x="16" y="95" fill="#f0f6fc" font-family="monospace" font-size="12">2. Concurrent State Exec</text>
+    <text x="16" y="120" fill="#f0f6fc" font-family="monospace" font-size="12">3. Telemetry Calculation</text>
+    <text x="16" y="145" fill="#f0f6fc" font-family="monospace" font-size="12">4. Failure Recovery / Queue</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <path d="M 595 125 L 645 125" stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="4,4"/>
+  <polygon points="650,125 640,120 640,130" fill="#3b82f6"/>
+
+  <!-- Step 3: Output / Storage -->
+  <g transform="translate(660, 50)" filter="url(#shadow)">
+    <rect width="180" height="150" rx="10" fill="url(#cardGrad)" stroke="#30363d" stroke-width="1.2"/>
+    <rect width="180" height="34" rx="10" fill="#21262d"/>
+    <text x="16" y="22" fill="#f0f6fc" font-family="-apple-system,sans-serif" font-size="13" font-weight="600">Dispatch & Telemetry</text>
+    <text x="16" y="66" fill="#7ee787" font-family="monospace" font-size="12">✓ 200 OK Response</text>
+    <text x="16" y="90" fill="#79c0ff" font-family="monospace" font-size="12">✓ Metric Percentiles</text>
+    <text x="16" y="114" fill="#ffa657" font-family="monospace" font-size="12">✓ Alert Dispatchers</text>
+  </g>
+</svg>

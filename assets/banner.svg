@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="85%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#21262d" stroke-width="0.8" opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="380" fill="url(#bg)"/>
+  <rect width="1200" height="380" fill="url(#grid)"/>
+  <rect width="1200" height="380" fill="url(#glow)"/>
+
+  <!-- Top Category Tag -->
+  <g transform="translate(60, 60)">
+    <rect width="294" height="26" rx="6" fill="#3b82f6" fill-opacity="0.12" stroke="#3b82f6" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="14" y="17.5" fill="#3b82f6" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">DISTRIBUTED BACKGROUND TASK QUEUE</text>
+  </g>
+
+  <!-- Big Title -->
+  <text x="60" y="155" fill="#f0f6fc" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="64" font-weight="900" letter-spacing="-1">SPOOL</text>
+
+  <!-- Tagline -->
+  <text x="60" y="210" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="20" font-weight="400">Lightweight priority task queue and concurrent worker pool with DAG pipeline chaining.</text>
+
+  <!-- Feature Pills -->
+  
+        <g transform="translate(60, 285)">
+            <rect width="163" height="32" rx="16" fill="#161b22" stroke="#3b82f6" stroke-opacity="0.3" stroke-width="1.2"/>
+            <circle cx="16" cy="16" r="4" fill="#3b82f6"/>
+            <text x="28" y="20.5" fill="#c9d1d9" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="13" font-weight="500">Priority Queues</text>
+        </g>
+        
+        <g transform="translate(237, 285)">
+            <rect width="199" height="32" rx="16" fill="#161b22" stroke="#3b82f6" stroke-opacity="0.3" stroke-width="1.2"/>
+            <circle cx="16" cy="16" r="4" fill="#3b82f6"/>
+            <text x="28" y="20.5" fill="#c9d1d9" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="13" font-weight="500">Worker Thread Pools</text>
+        </g>
+        
+        <g transform="translate(450, 285)">
+            <rect width="136" height="32" rx="16" fill="#161b22" stroke="#3b82f6" stroke-opacity="0.3" stroke-width="1.2"/>
+            <circle cx="16" cy="16" r="4" fill="#3b82f6"/>
+            <text x="28" y="20.5" fill="#c9d1d9" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="13" font-weight="500">Task Retries</text>
+        </g>
+        
+        <g transform="translate(600, 285)">
+            <rect width="172" height="32" rx="16" fill="#161b22" stroke="#3b82f6" stroke-opacity="0.3" stroke-width="1.2"/>
+            <circle cx="16" cy="16" r="4" fill="#3b82f6"/>
+            <text x="28" y="20.5" fill="#c9d1d9" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="13" font-weight="500">Zero Broker Deps</text>
+        </g>
+        
+</svg>
